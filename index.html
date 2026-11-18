@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BoilRoute | Purdue</title>
+
+  <!-- Leaflet map styles -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Accessibility: skip navigation -->
+  <a class="skip" href="#main">
+    Skip to route planner
+  </a>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="brand">
+      <span class="brand-icon">
+        B<span>↗</span>
+      </span>
+
+      <div>
+        <strong>BoilRoute</strong>
+        <small>Navigation beyond distance</small>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <span class="tag">
+        PURDUE · WEST LAFAYETTE
+      </span>
+
+      <button
+        id="themeButton"
+        type="button"
+        aria-pressed="false"
+      >
+        ☾ Night view
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main id="main">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+
+      <div class="eyebrow">
+        CAMPUS NAVIGATION
+      </div>
+
+      <h1>
+        Find a route that
+        <em>works for you.</em>
+      </h1>
+
+      <p class="muted">
+        Plan with your accessibility needs in mind.
+        Pedestrian route previews are available.
+        Accessibility and lighting verification
+        is still in development.
+      </p>
+
+      <!-- ================= ROUTE PLANNER ================= -->
+      <section class="panel">
+
+        <h2>Plan your route</h2>
+
+        <label for="startPoint">
+          STARTING POINT
+        </label>
+
+        <select id="startPoint">
+          <option value="">Choose a building</option>
+          <option value="current">📍 My Current Location (GPS)</option>
+          <option value="walc">WALC</option>
+          <option value="stewart">Stewart Center</option>
+          <option value="pmu">Purdue Memorial Union</option>
+          <option value="armstrong">Armstrong Hall</option>
+        </select>
+
+        <label for="endPoint">
+          DESTINATION
+        </label>
+
+        <select id="endPoint">
+          <option value="">Choose a building</option>
+          <option value="walc">WALC</option>
+          <option value="stewart">Stewart Center</option>
+          <option value="pmu">Purdue Memorial Union</option>
+          <option value="armstrong">Armstrong Hall</option>
+        </select>
+
+        <h3>Route preferences</h3>
+
+        <label class="check">
+          <input type="checkbox" id="wheelchair">
+          Wheelchair accessible
+        </label>
+
+        <label class="check">
+          <input type="checkbox" id="stairs">
+          Avoid stairs
+        </label>
+
+        <label class="check">
+          <input type="checkbox" id="slopes">
+          Avoid steep slopes
+        </label>
+
+        <label class="check">
+          <input type="checkbox" id="lighting">
+          Prefer well-lit paths
+        </label>
+
+        <button
+          id="planRouteButton"
+          class="primary"
+          type="button"
+        >
+          Find walking route →
+        </button>
+
+        <p
+          id="routeMessage"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+        <div
+          id="routeOptions"
+          class="route-options"
+          aria-label="Walking route alternatives"
+          hidden
+        ></div>
+
+        <p
+          id="routeDetails"
+          class="muted tiny"
+          aria-live="polite"
+        ></p>
+
+      </section>
+
+      <!-- ================= ACCESSIBILITY DATA ================= -->
+      <section class="panel">
+
+        <div class="split">
+          <h2>Accessibility Data</h2>
+
+          <button
+            type="button"
+            class="secondary"
+            id="loadOsm"
+            hidden
+          >
+            Load OSM data
+          </button>
+        </div>
+
+        <p class="muted tiny">
+          Mapped features near central Purdue.
+          OpenStreetMap community data,
+          not field-verified.
+        </p>
+
+        <label class="check">
+          <input
+            type="checkbox"
+            id="showSteps"
+            checked
+          >
+          Stairs (red)
+        </label>
+
+        <label class="check">
+          <input
+            type="checkbox"
+            id="showKerbs"
+            checked
+          >
+          Mapped curbs (orange)
+        </label>
+
+        <label class="check">
+          <input
+            type="checkbox"
+            id="showLighting"
+            checked
+          >
+          Lighting tags (blue/gray)
+        </label>
+
+        <p
+          id="osmStatus"
+          class="muted tiny"
+          role="status"
+          aria-live="polite"
+        >
+          Not loaded. Press Load OSM data.
+        </p>
+
+        <p
+          id="osmRouteReport"
+          class="muted tiny"
+          aria-live="polite"
+        ></p>
+
+      </section>
+
+      <!-- ================= COMMUNITY OBSERVATIONS ================= -->
+      <section class="panel">
+
+        <div class="split">
+          <h2>Community observations</h2>
+
+          <button
+            id="reportButton"
+            class="secondary"
+            type="button"
+            aria-expanded="false"
+          >
+            + Report
+          </button>
+        </div>
+
+        <label class="check">
+          <input
+            type="checkbox"
+            id="hazards"
+            checked
+          >
+          Show community reports
+        </label>
+
+        <p class="muted tiny">
+          Reports are unverified and saved only
+          in this browser until shared storage
+          is connected.
+        </p>
+
+        <div id="hazardForm" hidden>
+
+          <label for="hazardType">
+            OBSERVATION TYPE
+          </label>
+
+          <select id="hazardType">
+            <option>Broken Sidewalk</option>
+            <option>Missing Curb Ramp</option>
+            <option>Stairs</option>
+            <option>Steep Slope</option>
+            <option>Poor Lighting</option>
+            <option>Other</option>
+          </select>
+
+          <label for="hazardDescription">
+            DESCRIPTION
+          </label>
+
+          <textarea
+            id="hazardDescription"
+            maxlength="500"
+            placeholder="Describe what you observed"
+          ></textarea>
+          <label for="hazardPhoto">PHOTO EVIDENCE (OPTIONAL)</label>
+<input
+  type="file"
+  id="hazardPhoto"
+  accept="image/jpeg,image/png,image/webp"
+>
+
+<p class="muted tiny">
+  Photos are automatically compressed before saving.
+Avoid uploading identifiable people or personal information.
+</p>
+
+<p id="hazardPhotoStatus" role="status" aria-live="polite"></p>
+
+          <p
+            id="hazardLocation"
+            class="muted tiny"
+          >
+            Click a location on the map
+          </p>
+
+          <button
+            class="primary"
+            id="submitHazard"
+            type="button"
+          >
+            Save unverified observation
+          </button>
+
+        </div>
+
+      </section>
+
+    </aside>
+
+    <!-- ================= MAP ================= -->
+    <section
+      class="map-area"
+      aria-label="Campus map"
+    >
+
+      <div class="map-heading">
+
+        <div>
+          <strong>Explore Purdue campus</strong>
+          <p>Interactive map · OpenStreetMap</p>
+        </div>
+
+        <span class="status">
+          ● Prototype
+        </span>
+
+      </div>
+
+      <div
+        id="map"
+        role="application"
+        aria-label="Interactive Purdue campus map"
+      ></div>
+
+      <div class="map-foot">
+        <span>
+          ⓘ Pedestrian routes use OpenStreetMap
+          foot data; accessibility and lighting
+          are unverified.
+        </span>
+
+        <span>
+          Never rely on this prototype
+          for safety-critical navigation.
+        </span>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script src="routing.js"></script>
+  <script src="script.js"></script>
+  <script src="gps-location.js"></script>
+  <script src="live-navigation.js"></script>
+
+  <script src="voice-guidance.js"></script>
+  
+  <script src="accessible-mode.js"></script>
+  <script src="fullscreen-map.js"></script>
+  <script src="emergency-safety.js"></script>
+  <script src="mobile-layout.js"></script>
+
+
+</body>
+</html>

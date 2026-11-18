@@ -1,0 +1,1 @@
+BoilRoute 2.3 — real OSM attributes overlay. Open index.html with Live Server. Click Load OSM data. Public Overpass API may be unavailable or rate-limited. Markers and lines are community mapped, not field verified. Route options remain ordinary pedestrian routes, NOT wheelchair accessible routing. No API key required.

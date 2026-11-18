@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BoilRoute Network Downloader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #151719;
+      color: #f5f5f5;
+      padding: 40px;
+      max-width: 650px;
+      margin: auto;
+    }
+    button {
+      background: #d2b88c;
+      color: #151719;
+      padding: 15px 24px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:disabled { opacity: 0.5; }
+    pre {
+      background: #24272a;
+      padding: 20px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+<body>
+  <h1>BoilRoute — Walking Network</h1>
+  <p>Download OpenStreetMap pedestrian data for Purdue.</p>
+
+  <button id="download">Download Walking Network</button>
+  <pre id="status">Ready.</pre>
+
+  <script>
+    const button = document.getElementById("download");
+    const status = document.getElementById("status");
+
+    // Study area around Purdue's central campus.
+    // Format: south, west, north, east
+    const bbox = "40.418,-86.933,40.437,-86.901";
+
+    const query = `
+      [out:json][timeout:90];
+      (
+        way["highway"~"^(footway|path|pedestrian|steps|living_street|residential|service|unclassified|tertiary|secondary|primary)$"](${bbox});
+      );
+      out geom;
+    `;
+
+    const servers = [
+      "https://overpass.kumi.systems/api/interpreter",
+      "https://overpass.private.coffee/api/interpreter",
+      "https://overpass.nchc.org.tw/api/interpreter",
+      "https://overpass-api.de/api/interpreter"
+    ];
+
+    async function getData() {
+      let lastError;
+
+      for (const server of servers) {
+        try {
+          status.textContent =
+            "Requesting OpenStreetMap data...\n" + server;
+
+          const controller = new AbortController();
+          const timer = setTimeout(
+            () => controller.abort(), 35000
+          );
+
+          let response;
+          try {
+            response = await fetch(server, {
+              method: "POST",
+              body: new URLSearchParams({ data: query }),
+              signal: controller.signal
+            });
+          } finally {
+            clearTimeout(timer);
+          }
+
+          if (!response.ok) {
+            throw new Error("HTTP " + response.status);
+          }
+
+          const data = await response.json();
+
+          if (!Array.isArray(data.elements)) {
+            throw new Error("Invalid Overpass response");
+          }
+
+          if (!data.elements.length) {
+            throw new Error("No OSM ways returned");
+          }
+
+          return data;
+        } catch (error) {
+          lastError = error;
+          console.warn(server, error);
+        }
+      }
+
+      throw new Error(
+        "All servers failed: " + (lastError?.message || "Unknown")
+      );
+    }
+
+    button.addEventListener("click", async () => {
+      button.disabled = true;
+
+      try {
+        const data = await getData();
+
+        const features = data.elements
+          .filter(element =>
+            element.type === "way" &&
+            Array.isArray(element.geometry) &&
+            element.geometry.length >= 2
+          )
+          .map(element => ({
+            type: "Feature",
+            id: "way/" + element.id,
+            properties: {
+              osm_id: element.id,
+              osm_nodes: element.nodes || [],
+              ...element.tags
+            },
+            geometry: {
+              type: "LineString",
+              coordinates: element.geometry.map(
+                point => [point.lon, point.lat]
+              )
+            }
+          }));
+
+        const geojson = {
+          type: "FeatureCollection",
+          metadata: {
+            source: "OpenStreetMap / Overpass API",
+            downloadedAt: new Date().toISOString(),
+            bbox: bbox,
+            note: "Unverified OSM walking network candidate data"
+          },
+          features: features
+        };
+
+        const stairs = features.filter(
+          f => f.properties.highway === "steps"
+        ).length;
+
+        const footways = features.filter(
+          f => ["footway", "path", "pedestrian"]
+            .includes(f.properties.highway)
+        ).length;
+
+        status.textContent =
+          "SUCCESS!\n\n" +
+          "Total ways: " + features.length + "\n" +
+          "Footways/paths: " + footways + "\n" +
+          "Stairways: " + stairs + "\n\n" +
+          "Downloading walking-network.geojson...";
+
+        const blob = new Blob(
+          [JSON.stringify(geojson)],
+          { type: "application/geo+json" }
+        );
+
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "walking-network.geojson";
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+
+        setTimeout(() => URL.revokeObjectURL(url), 10000);
+
+      } catch (error) {
+        status.textContent =
+          "ERROR: " + error.message +
+          "\nTry again later.";
+      } finally {
+        button.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,2726 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "OpenStreetMap",
+    "exported_at": "2026-11-13T22:42:48.493Z",
+    "verification": "Not field verified",
+    "license": "ODbL 1.0"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 301409081,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.911106,
+            40.4244773
+          ],
+          [
+            -86.9111062,
+            40.4245435
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 301838787,
+        "osm_type": "way",
+        "highway": "steps",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9154203,
+            40.4237869
+          ],
+          [
+            -86.915421,
+            40.4237535
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 301957982,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9150662,
+            40.4253525
+          ],
+          [
+            -86.9150157,
+            40.4253525
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 301957983,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9150638,
+            40.4251925
+          ],
+          [
+            -86.9150112,
+            40.4251934
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 332308062,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9117709,
+            40.4247305
+          ],
+          [
+            -86.9117408,
+            40.4247299
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 332361175,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9102663,
+            40.4272592
+          ],
+          [
+            -86.9102124,
+            40.4272582
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 333375838,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.910534,
+            40.4247382
+          ],
+          [
+            -86.9105647,
+            40.4247372
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 339674767,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9123273,
+            40.4291168
+          ],
+          [
+            -86.9122578,
+            40.4290519
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 364445332,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9135051,
+            40.4253779
+          ],
+          [
+            -86.9135252,
+            40.4253773
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 910910473,
+        "osm_type": "way",
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "up",
+        "step_count": "5",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9102588,
+            40.4287641
+          ],
+          [
+            -86.9102464,
+            40.4287642
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 910910485,
+        "osm_type": "way",
+        "handrail": "no",
+        "highway": "steps",
+        "incline": "up",
+        "step_count": "3",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9102969,
+            40.4287642
+          ],
+          [
+            -86.9102861,
+            40.4287642
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 928454634,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9115543,
+            40.4255385
+          ],
+          [
+            -86.9115543,
+            40.4255151
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 928454636,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9117753,
+            40.4251285
+          ],
+          [
+            -86.9117464,
+            40.4251288
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 930846565,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down",
+        "ramp": "separate"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9119201,
+            40.4248547
+          ],
+          [
+            -86.9118616,
+            40.4248546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 930846567,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9122578,
+            40.4254241
+          ],
+          [
+            -86.9122573,
+            40.4254052
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 930846569,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9135192,
+            40.4250222
+          ],
+          [
+            -86.9134812,
+            40.4250221
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932253952,
+        "osm_type": "way",
+        "highway": "steps",
+        "lit": "no",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9131038,
+            40.4261885
+          ],
+          [
+            -86.9131029,
+            40.4261368
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932253991,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9163029,
+            40.4261783
+          ],
+          [
+            -86.9163035,
+            40.4261575
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932253997,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9140349,
+            40.4267851
+          ],
+          [
+            -86.9140577,
+            40.4267987
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932254016,
+        "osm_type": "way",
+        "highway": "steps",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9129211,
+            40.4291841
+          ],
+          [
+            -86.9129504,
+            40.4291651
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656525,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9150757,
+            40.4300113
+          ],
+          [
+            -86.9150183,
+            40.4300478
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656527,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9153108,
+            40.4302913
+          ],
+          [
+            -86.9152795,
+            40.4303093
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656541,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9168489,
+            40.4274352
+          ],
+          [
+            -86.9168247,
+            40.427417
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656580,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9157774,
+            40.4303305
+          ],
+          [
+            -86.9158265,
+            40.4303
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656649,
+        "osm_type": "way",
+        "highway": "steps",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9165566,
+            40.4261178
+          ],
+          [
+            -86.9165215,
+            40.4261096
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656664,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.914181,
+            40.430153
+          ],
+          [
+            -86.9142218,
+            40.4301267
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656667,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9117465,
+            40.4288992
+          ],
+          [
+            -86.9117579,
+            40.4288903
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656671,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9136224,
+            40.4296348
+          ],
+          [
+            -86.9136536,
+            40.4296169
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656678,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.913751,
+            40.4292968
+          ],
+          [
+            -86.9137156,
+            40.4292667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656679,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9142717,
+            40.4293682
+          ],
+          [
+            -86.9143077,
+            40.4293469
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656681,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9147378,
+            40.4298028
+          ],
+          [
+            -86.914773,
+            40.4297814
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936438967,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9124341,
+            40.4295498
+          ],
+          [
+            -86.912454,
+            40.4295355
+          ],
+          [
+            -86.9124995,
+            40.4295057
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936438968,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9123565,
+            40.4294803
+          ],
+          [
+            -86.91238,
+            40.4294656
+          ],
+          [
+            -86.9124107,
+            40.4294459
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936438987,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9134712,
+            40.4296473
+          ],
+          [
+            -86.9134431,
+            40.4296644
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936438990,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9130481,
+            40.4297061
+          ],
+          [
+            -86.9130711,
+            40.429726
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936438998,
+        "osm_type": "way",
+        "highway": "steps",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9115371,
+            40.4282621
+          ],
+          [
+            -86.9115094,
+            40.4282791
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936496105,
+        "osm_type": "way",
+        "handrail": "yes",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9112023,
+            40.4262469
+          ],
+          [
+            -86.9111864,
+            40.4262471
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936496124,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9120842,
+            40.4272413
+          ],
+          [
+            -86.9121322,
+            40.4272589
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936496127,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9122858,
+            40.4272187
+          ],
+          [
+            -86.9122401,
+            40.4272454
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936496129,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9121429,
+            40.427866
+          ],
+          [
+            -86.9121407,
+            40.4278009
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936504562,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9133618,
+            40.4254948
+          ],
+          [
+            -86.9133613,
+            40.4254541
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936520176,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9195145,
+            40.4272018
+          ],
+          [
+            -86.9195154,
+            40.4272252
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936520182,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9199275,
+            40.4271872
+          ],
+          [
+            -86.9199458,
+            40.427201
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936763620,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9203546,
+            40.426597
+          ],
+          [
+            -86.9203661,
+            40.4266049
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936763624,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9203547,
+            40.4269873
+          ],
+          [
+            -86.9203702,
+            40.4269746
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936824004,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.920425,
+            40.429248
+          ],
+          [
+            -86.9204247,
+            40.429225
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936824006,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9201682,
+            40.4290533
+          ],
+          [
+            -86.9201345,
+            40.4290533
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936824008,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9201384,
+            40.429452
+          ],
+          [
+            -86.9201754,
+            40.4294521
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936824010,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9201643,
+            40.4298527
+          ],
+          [
+            -86.9201298,
+            40.4298525
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936824012,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9201598,
+            40.4302241
+          ],
+          [
+            -86.9201265,
+            40.4302241
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 942020218,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9179154,
+            40.4237881
+          ],
+          [
+            -86.9179158,
+            40.4237442
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 942020227,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9190489,
+            40.4236842
+          ],
+          [
+            -86.9190169,
+            40.4236841
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 942369243,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9144062,
+            40.4235296
+          ],
+          [
+            -86.9144053,
+            40.4235562
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 942369252,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.915775,
+            40.4236486
+          ],
+          [
+            -86.9157357,
+            40.4236483
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 942375626,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9104865,
+            40.4237385
+          ],
+          [
+            -86.9104663,
+            40.4237385
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 942935568,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9146456,
+            40.4252759
+          ],
+          [
+            -86.9146287,
+            40.4252762
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 943949881,
+        "osm_type": "way",
+        "bicycle": "yes",
+        "highway": "steps",
+        "layer": "-1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9160785,
+            40.4268261
+          ],
+          [
+            -86.9160443,
+            40.4268252
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 943949935,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9165599,
+            40.4259361
+          ],
+          [
+            -86.9165274,
+            40.4259361
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1041715925,
+        "osm_type": "way",
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "up",
+        "lit": "yes",
+        "ramp": "no",
+        "step_count": "21",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9142358,
+            40.4283583
+          ],
+          [
+            -86.9143067,
+            40.4283141
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1088706525,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9152658,
+            40.424253
+          ],
+          [
+            -86.9152659,
+            40.4242678
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1088706527,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9152667,
+            40.4243484
+          ],
+          [
+            -86.9152668,
+            40.424361
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1089322645,
+        "osm_type": "way",
+        "covered": "no",
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "down"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9164484,
+            40.4251014
+          ],
+          [
+            -86.9164479,
+            40.4251175
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1091379273,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9146339,
+            40.4277429
+          ],
+          [
+            -86.9146689,
+            40.4277234
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1091379275,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9147933,
+            40.427651
+          ],
+          [
+            -86.9148264,
+            40.4276282
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1091379282,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9152957,
+            40.4280635
+          ],
+          [
+            -86.915253,
+            40.4280882
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1091379284,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9151395,
+            40.4281581
+          ],
+          [
+            -86.915102,
+            40.4281847
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1097616375,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9160264,
+            40.4302428
+          ],
+          [
+            -86.9160385,
+            40.4302359
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1098708131,
+        "osm_type": "way",
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "down"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.911763,
+            40.4245437
+          ],
+          [
+            -86.9117262,
+            40.4245433
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1098708133,
+        "osm_type": "way",
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9112285,
+            40.4245237
+          ],
+          [
+            -86.9112276,
+            40.4245045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1098708139,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9110009,
+            40.4244888
+          ],
+          [
+            -86.9110014,
+            40.4244681
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1153383086,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9106078,
+            40.4271491
+          ],
+          [
+            -86.9104824,
+            40.4271509
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1442902065,
+        "osm_type": "way",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9106911,
+            40.4270379
+          ],
+          [
+            -86.910658,
+            40.4270336
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1558996824,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9108767,
+            40.4244875
+          ],
+          [
+            -86.9108765,
+            40.4244695
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1558996827,
+        "osm_type": "way",
+        "highway": "steps",
+        "incline": "down",
+        "ramp": "separate"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9110009,
+            40.4245052
+          ],
+          [
+            -86.911001,
+            40.4245173
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 3066669180,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9102158,
+          40.4276132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 3066669185,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9103191,
+          40.427785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 3394744318,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9102611,
+          40.4276814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 3394744319,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9102936,
+          40.4277954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 3394765048,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9102933,
+          40.4258903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 3402953392,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9105018,
+          40.4299904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 8458401162,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9103066,
+          40.4288525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 8642108093,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9116664,
+          40.4301888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 8677094680,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9105322,
+          40.4279807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 10059976253,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "flush",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9138358,
+          40.4260326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 10096356787,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9115233,
+          40.4301115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 10832194244,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9104434,
+          40.4277913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 10832314377,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9115275,
+          40.4301311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 10832314379,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9104977,
+          40.430095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 13998574093,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9103126,
+          40.4298069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 13998574094,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9103202,
+          40.4280663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 13998574096,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9103042,
+          40.4280432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 13998574097,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9103038,
+          40.4289462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 13998574099,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9103131,
+          40.4299115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 13998576102,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9102996,
+          40.427797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 13998576105,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9105059,
+          40.4281914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 13998576106,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.910152,
+          40.4278958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 13998576107,
+        "osm_type": "node",
+        "barrier": "kerb",
+        "kerb": "lowered",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9104893,
+          40.4281966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 283274257,
+        "osm_type": "way",
+        "highway": "footway",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9160437,
+            40.4261093
+          ],
+          [
+            -86.9160424,
+            40.4261944
+          ],
+          [
+            -86.9160412,
+            40.4262686
+          ],
+          [
+            -86.91604,
+            40.4263459
+          ],
+          [
+            -86.9160394,
+            40.4263858
+          ],
+          [
+            -86.9160374,
+            40.4265126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 301409065,
+        "osm_type": "way",
+        "crossing": "traffic_signals",
+        "crossing:island": "no",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "yes",
+        "tactile_paving": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9102681,
+            40.4240836
+          ],
+          [
+            -86.9103494,
+            40.4240863
+          ],
+          [
+            -86.9104238,
+            40.4240894
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 301738059,
+        "osm_type": "way",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "lit": "yes",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9102751,
+            40.4244673
+          ],
+          [
+            -86.9102681,
+            40.4240836
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 301738145,
+        "osm_type": "way",
+        "bicycle": "no",
+        "foot": "yes",
+        "highway": "footway",
+        "horse": "no",
+        "layer": "-1",
+        "lit": "yes",
+        "motor_vehicle": "no",
+        "name": "MSEE tunnel",
+        "surface": "paved",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9117365,
+            40.4300161
+          ],
+          [
+            -86.9125188,
+            40.4294499
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 301957978,
+        "osm_type": "way",
+        "highway": "footway",
+        "lit": "no",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9131029,
+            40.4261368
+          ],
+          [
+            -86.9131016,
+            40.4260571
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 303228588,
+        "osm_type": "way",
+        "bicycle": "yes",
+        "crossing": "traffic_signals",
+        "crossing:island": "no",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "yes",
+        "surface": "asphalt",
+        "tactile_paving": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9105104,
+            40.4238933
+          ],
+          [
+            -86.9103594,
+            40.4238947
+          ],
+          [
+            -86.9102758,
+            40.4238975
+          ],
+          [
+            -86.9102417,
+            40.4239001
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 303228590,
+        "osm_type": "way",
+        "bicycle": "yes",
+        "crossing": "traffic_signals",
+        "crossing:island": "no",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "yes",
+        "surface": "asphalt",
+        "tactile_paving": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9104992,
+            40.4240427
+          ],
+          [
+            -86.910503,
+            40.4239844
+          ],
+          [
+            -86.9105104,
+            40.4238933
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 332361173,
+        "osm_type": "way",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "lit": "yes",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9102762,
+            40.4269212
+          ],
+          [
+            -86.9102871,
+            40.4268697
+          ],
+          [
+            -86.9102873,
+            40.4259319
+          ],
+          [
+            -86.9102933,
+            40.4258903
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 722181635,
+        "osm_type": "way",
+        "highway": "footway",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9160293,
+            40.4266001
+          ],
+          [
+            -86.9160286,
+            40.4266447
+          ],
+          [
+            -86.9160261,
+            40.4268247
+          ],
+          [
+            -86.9160246,
+            40.4269531
+          ],
+          [
+            -86.9160209,
+            40.4272036
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 802692787,
+        "osm_type": "way",
+        "bicycle": "yes",
+        "crossing": "traffic_signals",
+        "crossing:island": "no",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "yes",
+        "tactile_paving": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9102417,
+            40.4239001
+          ],
+          [
+            -86.9102255,
+            40.4239245
+          ],
+          [
+            -86.9102232,
+            40.4239834
+          ],
+          [
+            -86.9102245,
+            40.4240428
+          ],
+          [
+            -86.9102231,
+            40.4240686
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 860818862,
+        "osm_type": "way",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "lit": "yes",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9104238,
+            40.4240894
+          ],
+          [
+            -86.9104632,
+            40.4240976
+          ],
+          [
+            -86.910518,
+            40.4241199
+          ],
+          [
+            -86.9106612,
+            40.424117
+          ],
+          [
+            -86.9109771,
+            40.4241232
+          ],
+          [
+            -86.9111032,
+            40.4241266
+          ],
+          [
+            -86.9112303,
+            40.4241295
+          ],
+          [
+            -86.9113716,
+            40.424136
+          ],
+          [
+            -86.9115286,
+            40.4241487
+          ],
+          [
+            -86.9117312,
+            40.4241536
+          ],
+          [
+            -86.9118774,
+            40.4241585
+          ],
+          [
+            -86.9121211,
+            40.4241637
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656648,
+        "osm_type": "way",
+        "highway": "footway",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9165841,
+            40.4261323
+          ],
+          [
+            -86.9165566,
+            40.4261178
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656650,
+        "osm_type": "way",
+        "highway": "footway",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9165215,
+            40.4261096
+          ],
+          [
+            -86.9164794,
+            40.4260946
+          ],
+          [
+            -86.9164398,
+            40.4260747
+          ],
+          [
+            -86.9164177,
+            40.4260579
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656651,
+        "osm_type": "way",
+        "highway": "footway",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9164177,
+            40.4260579
+          ],
+          [
+            -86.9163876,
+            40.4260307
+          ],
+          [
+            -86.9163639,
+            40.426006
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 932656653,
+        "osm_type": "way",
+        "highway": "footway",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9162309,
+            40.426001
+          ],
+          [
+            -86.9162052,
+            40.4260289
+          ],
+          [
+            -86.9161778,
+            40.4260547
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 936438982,
+        "osm_type": "way",
+        "crossing": "unmarked",
+        "crossing:island": "no",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "yes",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.910269,
+            40.4270132
+          ],
+          [
+            -86.9102729,
+            40.4269662
+          ],
+          [
+            -86.9102762,
+            40.4269212
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 943949905,
+        "osm_type": "way",
+        "highway": "footway",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9161778,
+            40.4260547
+          ],
+          [
+            -86.9161634,
+            40.4260707
+          ],
+          [
+            -86.9161381,
+            40.426087
+          ],
+          [
+            -86.9161123,
+            40.4260963
+          ],
+          [
+            -86.9160437,
+            40.4261093
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 943949906,
+        "osm_type": "way",
+        "highway": "footway",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9160374,
+            40.4265126
+          ],
+          [
+            -86.9160293,
+            40.4266001
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1108829574,
+        "osm_type": "way",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "lit": "yes",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9102158,
+            40.4276132
+          ],
+          [
+            -86.9102381,
+            40.4275996
+          ],
+          [
+            -86.910253,
+            40.4275856
+          ],
+          [
+            -86.9102615,
+            40.4275732
+          ],
+          [
+            -86.9102668,
+            40.4275569
+          ],
+          [
+            -86.9102663,
+            40.4272592
+          ],
+          [
+            -86.910269,
+            40.4270132
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": 1488491749,
+        "osm_type": "way",
+        "bicycle": "yes",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "lit": "yes",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.9102158,
+            40.4276132
+          ],
+          [
+            -86.9101807,
+            40.4276187
+          ],
+          [
+            -86.9101394,
+            40.4276142
+          ],
+          [
+            -86.9101078,
+            40.4275991
+          ],
+          [
+            -86.910004,
+            40.4275081
+          ],
+          [
+            -86.9098309,
+            40.4273611
+          ]
+        ]
+      }
+    }
+  ]
+}
