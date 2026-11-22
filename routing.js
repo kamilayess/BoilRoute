@@ -346,14 +346,22 @@ async findAlternatives(start, end, options = {}) {
     return true;
   };
 
-  const shortest = await this.findRoute(
-    start,
-    end,
-    { ...options, avoidStairs: false }
-  );
+const avoidStairs = options.avoidStairs === true;
 
-  addRoute(shortest, "Shortest route");
+const shortest = await this.findRoute(
+  start,
+  end,
+  { ...options, avoidStairs }
+);
 
+  addRoute(
+  shortest,
+  avoidStairs
+    ? "Shortest route avoiding mapped stairs"
+    : "Shortest walking route"
+);
+
+  if (!avoidStairs) {
   try {
     const stairFree = await this.findRoute(
       start,
@@ -365,7 +373,7 @@ async findAlternatives(start, end, options = {}) {
   } catch (error) {
     console.warn(error.message);
   }
-
+}
   for (const segment of shortest.usedSegments) {
     penalties.set(segment, true);
   }

@@ -208,11 +208,35 @@ function showRoute(index) {
 
   describeOsmNearRoute();
 
-  routeDetails.textContent =
-    `Selected route: ${Math.round(route.distance)} m · ` +
-    `about ${Math.max(1, Math.round(route.duration / 60))} min. ` +
-    "Foot routing only. Stairs, curb ramps, slopes, lighting " +
-    "and entrance access have NOT been verified.";
+  const selectedPreferences = [];
+
+if ($("wheelchair").checked) {
+  selectedPreferences.push(
+    "Wheelchair mode: mapped stairs avoided"
+  );
+} else if ($("stairs").checked) {
+  selectedPreferences.push("Mapped stairs avoided");
+}
+
+if ($("slopes").checked) {
+  selectedPreferences.push(
+    "Steep slopes: not evaluated (data unavailable)"
+  );
+}
+
+if ($("lighting").checked) {
+  selectedPreferences.push(
+    "Lighting preference: not evaluated (data unavailable)"
+  );
+}
+
+routeDetails.textContent =
+  `Selected route: ${Math.round(route.distance)} m · ` +
+  `about ${Math.max(1, Math.round(route.duration / 60))} min. ` +
+  `${selectedPreferences.join(". ")}. ` +
+  `Mapped stair segments on route: ${route.stairSegments}. ` +
+  "Curb ramps, surface, slopes, lighting and entrances " +
+  "are not fully verified. Not certified wheelchair accessible.";
 }
 
 
@@ -230,17 +254,7 @@ if (!a || !b || a === b) {
   return;
 }
 
-  if (
-    $("wheelchair").checked ||
-    $("slopes").checked ||
-    $("lighting").checked
-  ) {
-    $("routeMessage").textContent =
-      "Wheelchair accessibility, slopes and lighting " +
-      "are not yet verified. Disable these preferences " +
-      "to preview an experimental walking route.";
-    return;
-  }
+
 
   const button = $("planRouteButton");
   button.disabled = true;
@@ -322,11 +336,14 @@ if (a === "current") {
 $("routeMessage").textContent =
   "Calculating pedestrian route...";
 
+const avoidStairs =
+  $("stairs").checked || $("wheelchair").checked;
+
 const results = await BoilerRouting.findAlternatives(
   startCoordinates,
   [locations[b][1], locations[b][0]],
   {
-    avoidStairs: $("stairs").checked
+    avoidStairs
   }
 );
 

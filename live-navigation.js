@@ -11,6 +11,31 @@
   let remainingLine = null;
   let completedLine = null;
   let lastProgress = 0;
+  let compassHeading = null;
+  let compassEnabled = false;
+
+  function handleOrientation(event) {
+    if (Number.isFinite(event.webkitCompassHeading)) {
+      // iPhone Safari: heading relative to north.
+      compassHeading = event.webkitCompassHeading;
+    } else if (
+      event.absolute === true &&
+      Number.isFinite(event.alpha)
+    ) {
+      compassHeading = (360 - event.alpha) % 360;
+    } else {
+      return;
+    }
+
+    const arrowShape = arrow?.getElement()
+      ?.querySelector(".boil-live-arrow");
+
+    if (arrowShape) {
+      arrowShape.style.transform =
+        `rotate(${compassHeading}deg)`;
+      arrowShape.textContent = "▲";
+    }
+  }
 
   const rad = Math.PI / 180;
   const earth = 6371000;
@@ -45,7 +70,7 @@
 
       const t = length2
         ? Math.max(0, Math.min(1,
-            -(ax * vx + ay * vy) / length2))
+          -(ax * vx + ay * vy) / length2))
         : 0;
 
       const snapped = [
@@ -145,6 +170,60 @@
   const startButton = el("live-start");
   const followButton = el("live-follow");
   const stopButton = el("live-stop");
+  const compassButton = document.createElement("button");
+  compassButton.id = "live-compass";
+  compassButton.type = "button";
+  compassButton.textContent = "🧭 Enable Compass";
+
+  followButton.insertAdjacentElement("afterend", compassButton);
+
+  compassButton.addEventListener("click", async () => {
+    if (!window.isSecureContext) {
+      statusText.textContent =
+        "Compass requires HTTPS on iPhone.";
+      return;
+    }
+
+    if (!window.DeviceOrientationEvent) {
+      statusText.textContent =
+        "Compass sensors are unavailable on this device.";
+      return;
+    }
+
+    try {
+      if (
+        typeof DeviceOrientationEvent.requestPermission === "function"
+      ) {
+        const permission =
+          await DeviceOrientationEvent.requestPermission();
+
+        if (permission !== "granted") {
+          statusText.textContent =
+            "Compass permission was not granted.";
+          return;
+        }
+      }
+
+      window.removeEventListener(
+        "deviceorientation",
+        handleOrientation
+      );
+
+      window.addEventListener(
+        "deviceorientation",
+        handleOrientation
+      );
+
+      compassEnabled = true;
+      compassButton.textContent = "🧭 Compass ON";
+      statusText.textContent =
+        "Compass enabled. Rotate your phone to test.";
+
+    } catch (error) {
+      statusText.textContent =
+        "Could not enable compass: " + error.message;
+    }
+  });
   const distanceText = el("live-distance");
   const statusText = el("live-status");
 
@@ -184,11 +263,20 @@
         Number.isFinite(speed) &&
         speed > 0.7;
 
-      arrowShape.style.transform = validHeading
-        ? `rotate(${heading}deg)`
-        : "none";
+      const direction = compassEnabled &&
+        Number.isFinite(compassHeading)
+        ? compassHeading
+        : validHeading
+          ? heading
+          : null;
 
-      arrowShape.textContent = validHeading ? "▲" : "●";
+      arrowShape.style.transform =
+        direction !== null
+          ? `rotate(${direction}deg)`
+          : "none";
+
+      arrowShape.textContent =
+        direction !== null ? "▲" : "●";
     }
 
     if (following) {
@@ -262,7 +350,7 @@
     }).addTo(map);
 
     if (remaining <= 15 &&
-        meters(point, coords[coords.length - 1]) <= 20) {
+      meters(point, coords[coords.length - 1]) <= 20) {
       statusText.textContent =
         "You appear to have reached the destination. " +
         "Confirm the entrance visually or with assistance.";
